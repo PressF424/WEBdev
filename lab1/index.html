@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №1</title>
+    <meta name="keywords" content="РКСП, примеры верстки, html">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <h1>Лабораторная работа №1</h1>
+    </header>
+
+    <!-- Навигация -->
+    <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- Основной контент -->
+    <main>
+        <h2>Основной контент</h2>
+        <p>Ссылка на сайт GitVerse: <a href="https://gitverse.ru/dashboard" target="_blank">Dashboard</a>.</p>
+        <p>Мои контактные данные. Ссылка на телефон: <a href="tel:+79104697810">+79104697810</a> и email: <a href="mailto:artem.s4z@yandex.ru">My email</a>.</p>
+
+        <h2>Список:</h2>
+        <ul>
+            <li>Пункт 1</li>
+            <li>Пункт 2</li>
+            <li>Пункт 3</li>
+        </ul>
+
+        <h2>Таблица:</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Возраст</th>
+                    <th>Город</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Артём</td>
+                    <td>19</td>
+                    <td>Москва</td>
+                </tr>
+                <tr>
+                    <td>Карина</td>
+                    <td>20</td>
+                    <td>Казань</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Форма регистрации</h2>
+        <form id="registration-form">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label>Пол:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Мужской</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Женский</label><br><br>
+
+            <label for="birthdate">Дата рождения:</label>
+            <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Подписаться на рассылку</label><br><br>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+
+        <h2>Изображения</h2>
+        <div class="image-container">
+            <img src="large-image.jpg" alt="Большое изображение" class="large-image">
+            <div class="small-images">
+                <img src="small-image1.jpg" alt="Маленькое изображение 1" class="small-image">
+                <img src="small-image2.jpg" alt="Маленькое изображение 2" class="small-image">
+            </div>
+        </div>
+    </main>
+
+    <!-- Боковая панель -->
+    <aside>
+        <h2>Боковая панель</h2>
+        <p>Дополнительная информация.</p>
+        <ul>
+            <li><a href="#">Ссылка 1</a></li>
+            <li><a href="#">Ссылка 2</a></li>
+            <li><a href="#">Ссылка 3</a></li>
+        </ul>
+    </aside>
+
+    <!-- Подвал -->
+    <footer>
+        <p>&copy; 2025 Сазонов Артём -- Лабораторная работа №1</p>
+    </footer>
+
+    <!-- Подключение JavaScript -->
+    <script src="javascript.js"></script>
+</body>
+</html>
